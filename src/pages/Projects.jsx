@@ -13,23 +13,28 @@ const projects = [
     {   name: "Movie App",
         id: "Image1",
         src: Image1,
+        languages: "React-js, Tailwindcss"
     
     },
     {   name: "Drag and Drop Image app",
         id: "Image2",
-        src: Image2
+        src: Image2,
+        languages: "React-js, Tailwindcss"
     },
     {   name: "Virtual Credit Card Generator",
         id: "Image3",
-        src: Image3
+        src: Image3,
+        languages: "React-js, Tailwindcss"
     },
     {   name: "Pricing Card",
         id: "Image4",
-        src: Image4
+        src: Image4,
+        languages: "HTML/CSS/JS"
     },
     {   name: "Food Delivery Web App",
         id: "Image5",
-        src: Image5
+        src: Image5,
+        languages: "HTML/CSS/JS"
     },
 
 ]
@@ -46,14 +51,19 @@ export default function Projects() {
         Back to Home
       </Link>
     </div>
-            <div className="flex gap-5 flex-wrap md:mx-6 justify-center">
+            <div className="flex gap-5 flex-wrap md:mx-6 justify-center ">
                  {projects.map((project, index) => (
-                    <div className="mb-5 rounded-lg"> 
+                    <div className="mb-5 rounded-lg border-black border-4"> 
                     <img src={project.src} alt="" className="w-60 h-60 md:w-96 "/>
 
-                    <p className="bg-gray-300 text-lg text-center font-bold ">{project.name}</p>
-                             
+                  <div className="h-10 bg-gray-300 ">  <p className="text-lg text-center font-bold">{project.name}</p>
+                  </div>
 
+                    <div className="text-lg bg-gray-400 text-center">
+                        <p>
+                            {project.languages}
+                        </p>
+                    </div>
                     </div>    ))   }</div>
                 
       
