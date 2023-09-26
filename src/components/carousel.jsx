@@ -24,7 +24,7 @@ const prev = () => setCurrentSlide((currentSlide) => ((currentSlide) === 0 ? ima
 const next = () => setCurrentSlide((currentSlide) => (currentSlide === images.length - 1 ? 0 : currentSlide + 1))
 
 const autoslide = true
-const autoSlideInterval = 3000
+const autoSlideInterval = 4000
 
 useEffect(() => {
     if (!autoslide) return 
