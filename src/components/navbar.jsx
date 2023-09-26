@@ -9,21 +9,21 @@ export default function Navbar() {
     
     return (
 
-<section className="flex drop-shadow-lg bg-white justify-between w-full h-20 pt-1 relative z-10">
-<div className="flex items-center justify-between  h-28 w-full">
+<section className="flex drop-shadow-lg bg-white justify-between w-full h-20 relative z-10">
+<div className="flex items-center justify-between  ml-4 w-full">
     <div>
         <h2 className="font-skranji text-2xl lg:text-4xl">Hi, welcome to my Portfolio</h2>
     </div>
 
     <div className=" bg-violet-600 hidden md:flex shadow-[10px_10px_10px_0px_rgba(0,0,0,0.8)] rounded-2xl h-16 text-center text-2xl text-white items-center">
     <Link to={"/"}>
-        <div className=" w-28  border-r-orange-500 border-r-4">Home</div> </Link>
+        <div className="w-32 lg:w-44  border-r-orange-500 border-r-4">Home</div> </Link>
     <Link to={"/projects"}>
-        <div className=" w-28  border-r-orange-500 border-r-4">Projects</div>   </Link>
+        <div className="w-32 lg:w-44  border-r-orange-500 border-r-4">Projects</div>   </Link>
     <Link to={"/about"}>
-        <div className=" w-28  border-r-orange-500 border-r-4">About</div>   </Link>
+        <div className="w-32 lg:w-44  border-r-orange-500 border-r-4">About</div>   </Link>
     <Link to={"/contact"}>
-        <div className=" w-28 ">Contact</div>   </Link>
+        <div className="w-32 lg:w-44 ">Contact</div>   </Link>
     </div>
 </div> 
 

@@ -40,15 +40,15 @@ const HomePage = () => {
       </div>
      
      <div className="flex flex-col text-center md:w-1/2 items-center justify-center"> 
-     <Link to="/about" className="mt-10 text-white p-2 rounded-lg border-orange-500 border-2">
+     <Link to="/about" className="mt-10 text-white p-2 rounded-lg border-orange-500 border-2 w-52 hover:bg-purple-600 md:w-72">
         About Me
       </Link>
 
-      <Link to="/contact" className="mt-10 text-white p-2 rounded-lg border-orange-500 border-2">
+      <Link to="/contact" className="mt-10 text-white p-2 w-52 rounded-lg border-orange-500 border-2 hover:bg-purple-600 md:w-72">
        Contact Me
       </Link>
 
-      <Link to="/projects" className="my-10 text-white p-2 rounded-lg border-orange-500 border-2">
+      <Link to="/projects" className="my-10 text-white p-2 w-52 rounded-lg border-orange-500 border-2 hover:bg-purple-600 md:w-72">
         View full project archive
       </Link>
       </div>
