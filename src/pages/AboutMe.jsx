@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <div className="bg-yellow-100 h-screen flex flex-col justify-center items-center">
+    <div>
       <h1 className="text-4xl font-bold">About Us</h1>
       <Link to="/" className="mt-4 text-yellow-500">
         Back to Home

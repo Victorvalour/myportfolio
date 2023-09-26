@@ -14,7 +14,7 @@ const HomePage = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
-      className="bg-blue-100   flex flex-col  items-center pb-8"
+      className="bg-violet-950   flex flex-col  items-center pb-8"
     >
         <Navbar />
         <motion.div
@@ -33,12 +33,10 @@ const HomePage = () => {
     
       <h1 className="text-4xl ml-3 font-bold  self-start text-orange-500">Eweh Victor E.</h1>
 
-      <p className="self-start ml-3 text-xl font-bold ">Front-end Web Developer</p>
-      <p className="self-start ml-3 text-lg font-semibold mt-5">Hi there! I build a dynamic and user-friendly web applications. I have a keen eye for design and I love finding new ways of making digital experiences on the web fun and enjoyable.</p>
+      <p className="self-start ml-3 text-xl font-bold text-white ">Front-end Web Developer</p>
+      <p className="self-start ml-3 text-lg font-semibold mt-5 text-slate-300">Hi there! I build  dynamic and user-friendly web applications. I have a keen eye for design and I love finding new ways of making digital experiences on the web fun and enjoyable.</p>
 
-    <Carousel />
-
-      <Link to="/projects" className="mt-4 text-blue-500 p-2 rounded-lg border-white border-4">
+      <Link to="/projects" className="mt-4 text-white p-2 rounded-lg border-orange-500 border-4">
         View full project archive
       </Link>
 
@@ -49,6 +47,10 @@ const HomePage = () => {
       <Link to="/contact" className="mt-4 text-blue-500">
        Contact Me
       </Link>
+
+    <Carousel />
+
+     
 
     </motion.div>
   );

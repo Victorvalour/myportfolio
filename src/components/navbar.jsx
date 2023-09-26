@@ -52,7 +52,7 @@ initial="closed"
 animate="open"
 exit="closed"
 
-className="fixed z-20 right-0 top-20 shadow-[10px_10px_10px_0px_rgba(0,0,0,0.8)] bg-slate-500 w-64">
+className="fixed z-20 right-0 top-20 shadow-[10px_10px_10px_0px_rgba(0,0,0,0.8)] rounded-2xl bg-violet-600 w-64">
             <div>
                 <ul className="flex flex-col text-center my-10 space-y-12">
                    <Link to={"/"}>
