@@ -9,12 +9,25 @@ export default function Navbar() {
     
     return (
 
-<section className="flex drop-shadow-lg bg-white justify-between w-full h-20 pt-3 relative z-10">
-<div className="flex items-center">
+<section className="flex drop-shadow-lg bg-white justify-between w-full h-20 pt-1 relative z-10">
+<div className="flex items-center justify-between  h-28 w-full">
+    <div>
+        <h2 className="font-skranji text-2xl lg:text-4xl">Hi, welcome to my Portfolio</h2>
+    </div>
 
-    <h2 className="font-skranji text-lg">Hi, welcome to my Portfolio</h2>
+    <div className=" bg-violet-600 hidden md:flex shadow-[10px_10px_10px_0px_rgba(0,0,0,0.8)] rounded-2xl h-16 text-center text-2xl text-white items-center">
+    <Link to={"/"}>
+        <div className=" w-28  border-r-orange-500 border-r-4">Home</div> </Link>
+    <Link to={"/projects"}>
+        <div className=" w-28  border-r-orange-500 border-r-4">Projects</div>   </Link>
+    <Link to={"/about"}>
+        <div className=" w-28  border-r-orange-500 border-r-4">About</div>   </Link>
+    <Link to={"/contact"}>
+        <div className=" w-28 ">Contact</div>   </Link>
+    </div>
 </div> 
-<div>
+
+<div className="md:hidden">
         <motion.button 
         animate={mobileNav ? "open" : "closed"}
         onClick= {() => toggleMobileNav()}
@@ -52,7 +65,7 @@ initial="closed"
 animate="open"
 exit="closed"
 
-className="fixed z-20 right-0 top-20 shadow-[10px_10px_10px_0px_rgba(0,0,0,0.8)] rounded-2xl bg-violet-600 w-64">
+className="fixed z-20 right-0 top-20 shadow-[10px_10px_10px_0px_rgba(0,0,0,0.8)] rounded-2xl bg-violet-600 w-64 md:hidden">
             <div>
                 <ul className="flex flex-col text-center my-10 space-y-12">
                    <Link to={"/"}>

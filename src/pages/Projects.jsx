@@ -63,7 +63,7 @@ export default function Projects() {
             
             
                  {projects.map((project, index) => (
-                    <div className="mb-5 rounded-lg border-orange-500 border-4"> 
+                    <div className="mb-5 rounded-lg border-white border-4 shadow-[10px_10px_10px_0px_rgba(0,0,0,0.8)]"> 
 
                     <a href={project.link} >
                     <img src={project.src} alt="" className="w-72 h-60 md:w-96 "/>
