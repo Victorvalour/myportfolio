@@ -33,7 +33,7 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className="carousel-container overflow-hidden relative mt-12 w-[90%] md:w-[50%]">
+    <div className="carousel-container overflow-hidden relative mt-12 w-[90%] md:w-96">
      
       <div className="carousel-slides flex gap-3 transition-transform ease-out duration-500" style={{transform: `translateX(-${currentSlide * 80}%)`}}>
         {images.map((image, index) => (

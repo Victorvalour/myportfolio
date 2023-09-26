@@ -1,6 +1,7 @@
 // components/ProjectPage.js
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import Image1 from "../images/image1.jpg"
 import Image2 from "../images/image2.jpg"
@@ -50,10 +51,14 @@ export default function Projects() {
 
 
     return (
-    <div className="bg-indigo-900 pt-1">
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1 }} className="bg-violet-950 pt-1">
 
         <div className="flex justify-between mx-4 my-8">
-      <h1 className="text-4xl font-bold text-black border-b-orange-500 border-b-4 p-2">Projects</h1>
+      <h1 className="text-4xl font-bold text-white border-b-black border-b-4 p-2">Projects</h1>
       <Link to="/" className="mt-4 text-black-500 text-xl text-orange-400">
         Back to Home
       </Link>
@@ -66,13 +71,13 @@ export default function Projects() {
                     <div className="mb-5 rounded-lg border-white border-4 shadow-[10px_10px_10px_0px_rgba(0,0,0,0.8)]"> 
 
                     <a href={project.link} >
-                    <img src={project.src} alt="" className="w-72 h-60 md:w-96 "/>
+                    <img src={project.src} alt="" className="w-72  md:w-96 "/>
 
-                  <div className="h-10 bg-gray-300 ">  <p className="text-lg text-center font-bold ">{project.name}</p>
+                  <div className="h-16 flex justify-center items-center bg-purple-950 ">  <p className="text-2xl text-center font-bold text-white">{project.name}</p>
                   </div>
 
-                    <div className="text-lg bg-gray-400 text-center">
-                        <p>
+                    <div className="text-xl h-12 flex  bg-purple-600 text-center">
+                        <p className="ml-8 text-white"> <span className="font-bold">Languages: </span>  
                             {project.languages}
                         </p>
                     </div>
@@ -83,6 +88,6 @@ export default function Projects() {
                    
 
         <p className="text-center text-white bg-black">&copy; Victor-V </p>
- </div>
+ </motion.div>
     )
 }
