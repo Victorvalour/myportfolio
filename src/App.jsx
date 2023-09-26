@@ -1,10 +1,10 @@
-// App.js
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/Homepage";
 import Projects from "./pages/Projects";
 import AboutMe from "./pages/AboutMe";
-import Contact from "./pages/contact"
+import ContactMe from "./pages/ContactMe";
+
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<AboutMe />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactMe />} />
       </Routes>
    
   );
