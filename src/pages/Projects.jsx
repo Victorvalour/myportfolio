@@ -38,11 +38,11 @@ const projects = [
 export default function Projects() {
 
     return (
-    <div className="bg-[#040414] pt-1">
+    <div className="bg-blue-200 pt-1">
 
         <div className="flex justify-between mx-4 my-8">
-      <h1 className="text-4xl font-bold text-white">Projects</h1>
-      <Link to="/" className="mt-4 text-green-500">
+      <h1 className="text-4xl font-bold text-black">Projects</h1>
+      <Link to="/" className="mt-4 text-black-500 text-lg">
         Back to Home
       </Link>
     </div>
