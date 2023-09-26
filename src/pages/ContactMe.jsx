@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import vic from "../images/vic.jpg"
 
 const ContactMe = () => {
   return (
@@ -8,17 +9,26 @@ const ContactMe = () => {
         <div className="flex justify-between">
       <h1 className="text-4xl font-bold">Contact Me</h1>
 
-      <Link to="/" className="mt-4 text-yellow-500">
+      <Link to="/" className="mt-4 text-lg text-yellow-500">
         Back to Home
       </Link>
       </div>
 
-        <div className="font-bold ml-8">
-           <p className="text-black text-2xl mb-8"> Email: <a href="mailto:ewehvictor7@gmail.com" className="underline text-white">ewehvictor7@gmail.com</a> </p>
-           <p className="text-black text-2xl mb-8">Phone: <span className="text-white"> +234 806 067 8108 </span></p>
+      <img src={vic} alt="" className="rounded-full h-40 w-40 self-center border-4 " />
 
-           <p  className="text-black text-2xl mb-8">
-            Twitter: <a href="https://twitter.com/victor_valour" className="text-white underline">Eweh Victor E.</a>
+      
+      <div className="text-xl font-semibold text-white">
+        <p>Bring in your projects, and I'll be more than happy to work with you to bring them to reality.</p>
+        <p>You can me through the details below.</p>
+      </div>
+
+        <div className="font-bold ml-4 rounded-2xl border-black border-4 p-4">
+           <p className="text-orange-500 text-2xl mb-8"> Email: <a href="mailto:ewehvictor7@gmail.com" className="underline text-white"><br />ewehvictor7@gmail.com</a> </p>
+           <p className="text-orange-500 text-2xl mb-8">Phone: <span className="text-white"><br /> +234 806 067 8108 </span></p>
+
+           <p  className="text-orange-500 text-2xl mb-8">
+            Twitter: <a href="https://twitter.com/victor_valour" className="text-white underline">
+                <br />Eweh Victor E.</a>
            </p>
         </div>
 

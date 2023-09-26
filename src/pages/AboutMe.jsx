@@ -14,7 +14,8 @@ const AboutMe = () => {
       </Link>
       </div>
 
-      <img src={vic} alt=""  className="rounded-full h-40 w-40 self-center"/>
+      <img src={vic} alt=""  className="rounded-full h-40 w-40 self-center border-4"/>
+
         <div className="mt-3 text-xl">
             <p className="text-slate-200">
                 Being a tech enthusiast, I have always had the desire and passion to learn new things. <br /> My journer as a developer began in the early part of 2023, and so far, I can say that it has really been awesome. <br /> 
