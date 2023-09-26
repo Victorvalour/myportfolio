@@ -10,7 +10,7 @@ const ContactMe = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    transition={{ duration: 1 }} className="pt-10 h-screen bg-violet-900 px-3 flex flex-col gap-10 ">
+    transition={{ duration: 1 }} className="pt-10 pb-16 h-full bg-violet-900 px-3 flex flex-col gap-10 ">
         <div className="flex justify-between md:mx-48">
       <h1 className="text-4xl font-bold border-b-4 border-b-orange-500">Contact Me</h1>
 
