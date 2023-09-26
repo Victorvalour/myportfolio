@@ -1,14 +1,28 @@
 // components/AboutUsPage.js
 import React from "react";
 import { Link } from "react-router-dom";
+import vic from "../images/vic.jpg"
 
 const AboutMe = () => {
   return (
-    <div>
-      <h1 className="text-4xl font-bold">About Us</h1>
+    <div className="pt-10 h-screen px-3 bg-indigo-950 flex flex-col gap-10">
+        <div className="flex justify-between">
+      <h1 className="text-4xl font-bold text-white border-b-4 border-orange-500">About Me</h1>
+
       <Link to="/" className="mt-4 text-yellow-500">
         Back to Home
       </Link>
+      </div>
+
+      <img src={vic} alt=""  className="rounded-full h-40 w-40 self-center"/>
+        <div className="mt-3 text-xl">
+            <p className="text-slate-200">
+                Being a tech enthusiast, I have always had the desire and passion to learn new things. <br /> My journer as a developer began in the early part of 2023, and so far, I can say that it has really been awesome. <br /> 
+                So far, I have been able to acquire a lot of useful skills in the tech world, including programming languages like: <br /> <span className="text-orange-500 font-bold">Javascript, CSS, HTML, React, Typescript, NodeJS, Tailwind</span> and a few others.
+            </p>
+
+        </div>
+
     </div>
   );
 };
