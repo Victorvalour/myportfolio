@@ -36,7 +36,7 @@ const HomePage = () => {
         <h1 className="text-4xl ml-3 font-bold  self-start text-orange-500 md:self-center md:text-6xl">Eweh Victor E. <span className="text-xl"> (CEO Valvitek)</span></h1>
 
       <p className="self-start ml-3 text-xl md:text-2xl font-bold text-white ">Fullstack Web Developer</p>
-      <p className="self-start ml-3 text-lg md:text-xl font-semibold mt-5 text-slate-300 ">Hi there! I build professional, dynamic and user-friendly web applications for Businesses and companies all over the world. I have a keen eye for design and I love finding new ways of making digital experiences on the web fun and enjoyable.</p>
+      <p className="self-start ml-3 text-lg md:text-xl font-semibold mt-5 text-slate-300 ">Hi there! I build professional, dynamic and user-friendly web applications for Businesses and companies all over the world. <br />I have a keen eye for design and I love finding new ways of making digital experiences on the web fun and enjoyable.</p>
       </div>
      
      <div className="flex flex-col text-center md:w-1/2 items-center justify-center"> 
