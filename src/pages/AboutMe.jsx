@@ -1,8 +1,7 @@
 // components/AboutUsPage.js
 import React from "react";
 import { Link } from "react-router-dom";
-import vic from "../images/vic.jpg"
-import vic2 from "../images/vic2.jpg"
+import vic2 from "../images/vic.jpg"
 
 const AboutMe = () => {
   return (

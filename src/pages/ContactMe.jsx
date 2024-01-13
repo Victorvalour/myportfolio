@@ -19,7 +19,7 @@ const ContactMe = () => {
       </Link>
       </div>
 
-      <img src={vic} alt="" className="rounded-full h-40 w-40 self-center border-4 " />
+      <img src={vic} alt="" className="rounded-xl h-52 w-40 self-center border-4 " />
 
       
       <div className="text-xl font-semibold text-white md:self-center">
