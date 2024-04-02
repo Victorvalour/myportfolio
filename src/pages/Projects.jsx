@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Image1 from "../images/image1.jpg"
 import Image2 from "../images/image2.jpg"
 import Image3 from "../images/image3.jpg"
-import Image4 from "../images/image4.jpg"
+
 import Image5 from "../images/image5.jpg"
 
 
@@ -30,12 +30,7 @@ const projects = [
         languages: "React-js, Tailwindcss",
         link: "https://knscardsolution.vercel.app/"
     },
-    {   name: "Pricing Card",
-        id: "Image4",
-        src: Image4,
-        languages: "HTML/CSS/JS",
-        link: "https://victorvalour.github.io/Pricing-Card-Challenge/"
-    },
+   
     {   name: "Food Delivery Web App",
         id: "Image5",
         src: Image5,
@@ -68,21 +63,29 @@ export default function Projects() {
             
             
                  {projects.map((project, index) => (
-                    <div className="mb-5 rounded-lg border-white border-4 shadow-[10px_10px_10px_0px_rgba(0,0,0,0.8)]"> 
+                 
 
-                    <a href={project.link} >
-                    <img src={project.src} alt="" className="w-72  md:w-96 "/>
+                    
 
-                  <div className="h-16 flex justify-center items-center bg-purple-950 ">  <p className="text-2xl text-center font-bold text-white">{project.name}</p>
-                  </div>
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="rounded-t-lg" src={project.src} alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Read more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
 
-                    <div className="text-xl h-12 flex  bg-purple-600 text-center">
-                        <p className="ml-8 text-white"> <span className="font-bold">Languages: </span>  
-                            {project.languages}
-                        </p>
-                    </div>
-                    </a>
-                    </div>    ))   }
+                    ))   }
                     </div>
                 
                    

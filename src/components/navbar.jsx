@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { motion, useCycle, AnimatePresence } from "framer-motion";
 
@@ -6,24 +6,52 @@ import { motion, useCycle, AnimatePresence } from "framer-motion";
 export default function Navbar() {
 
     const [mobileNav, toggleMobileNav] = useCycle(false, true)
-    
+
+    const [isHovering, setIsHovering] = useState(false)
+
+    const [activeItem, setActiveItem] = useState(null);
+
+    const handleItemClick = (index) => {
+        setActiveItem(index);
+    };
+
     return (
 
 <section className="flex drop-shadow-lg bg-white justify-between w-full h-20 relative z-10">
-<div className="flex items-center justify-between  ml-4 w-full">
+<div className="flex items-center justify-between  ml-[52px] w-full">
     <div>
         <h2 className="font-skranji text-2xl lg:text-4xl">Hi, welcome to my Portfolio</h2>
     </div>
 
-    <div className=" bg-violet-600 hidden md:flex shadow-[10px_10px_10px_0px_rgba(0,0,0,0.8)] rounded-2xl h-16 text-center text-2xl text-white items-center">
-    <Link to={"/"}>
-        <div className="w-32 lg:w-44  border-r-orange-500 border-r-4">Home</div> </Link>
-    <Link to={"/projects"}>
-        <div className="w-32 lg:w-44  border-r-orange-500 border-r-4">Projects</div>   </Link>
-    <Link to={"/about"}>
-        <div className="w-32 lg:w-44  border-r-orange-500 border-r-4">About</div>   </Link>
-    <Link to={"/contact"}>
-        <div className="w-32 lg:w-44 ">Contact</div>   </Link>
+    <div className="nav hidden md:flex h-16 text-center text-xl text-slate-900 items-center overflow-hidden">
+   
+    <Link 
+    className="nav-item lg:w-[128px]"
+    to={"/"}>
+        <div 
+               className="inner border-r-orange-500 border-r-2 ">
+                
+                Home
+             </div> 
+             </Link>
+    
+             <Link
+             className="nav-item lg:w-[128px]"
+             to={"/"}>
+        <div 
+        className="inner border-r-orange-500 border-r-2 ">
+          
+            Projects</div> 
+            </Link>
+
+    <Link 
+    className="nav-item lg:w-[128px]"
+    to={"/about"}>
+        <div className="inner border-r-orange-500 border-r-2 ">About</div>   </Link>
+    <Link 
+    className="nav-item lg:w-[128px]"
+    to={"/contact"}>
+        <div className="inner">Contact</div>   </Link>
     </div>
 </div> 
 
