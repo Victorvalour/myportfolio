@@ -6,11 +6,13 @@ import { motion } from "framer-motion";
 import Image1 from "../images/image1.jpg"
 import Image2 from "../images/image2.jpg"
 import Image3 from "../images/image3.jpg"
-import Image5 from "../images/image5.jpg"
+import chianhomepage from "../images/chianhomepage.jpg"
 
 
 const projects = [
-    {   name: "Movie App",
+
+    {   
+        name: "Movie App",
         details: "A personal movie website project that uses the movieDB api to fetch and display movies for users to view.",
         id: "Image1",
         src: Image1,
@@ -18,27 +20,26 @@ const projects = [
         link: "https://stage-two-task-victorvalour.vercel.app/"
     
     },
+    {   name: "Chian Gas ltd",
+    details: "Order for lpg cooking gas from gas vendors near you from the comfort of your home.",
+    id: "chianhomepage",
+    src: chianhomepage,
+    languages: "Next.js, Node.js, MongoDB",
+    link: "https://chiangas.com/"
+},
     {   name: "Drag and Drop Image app",
-        details: "",
+        details: "This website use the react-dnd library to implement a drag and drop feature.",
         id: "Image2",
         src: Image2,
         languages: "React-js, Tailwindcss",
         link: "https://stagethree.vercel.app/"
     },
     {   name: "Virtual Credit Card Generator",
-        details: "",
+        details: "Generate a physical/virtual Dollar or naira credit card for your transactions.",
         id: "Image3",
         src: Image3,
         languages: "React-js, Tailwindcss",
         link: "https://knscardsolution.vercel.app/"
-    },
-   
-    {   name: "Food Delivery Web App",
-        details: "",
-        id: "Image5",
-        src: Image5,
-        languages: "HTML/CSS/JS",
-        link: "https://victorvalour.github.io/Mias_kitchen/"
     },
 
 ]
