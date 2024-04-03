@@ -21,7 +21,6 @@ import {
 } from "@/components/ui/carousel"
 
 import Autoplay from "embla-carousel-autoplay"
-
 //images
 import cth from '../images/cth1.jpg'
 import img from '../images/img.jpg'
@@ -55,7 +54,7 @@ const HomePage = () => {
     >
         <Navbar />
         
-<img src={dots} alt="" className="w-32 absolute top-14 opacity-60 "/>
+<img src={dots} alt="" className="w-32 absolute top-14 opacity-60 hidden md:block"/>
       
 <img src={dots} alt="" className="w-32 absolute top-[200px] opacity-50 "/>
 <img src={dots} alt="" className="w-32 absolute top-14 left-16 opacity-50 "/>
