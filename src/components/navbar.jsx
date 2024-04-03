@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
 
-<section className="flex drop-shadow-lg bg-white justify-between w-full h-20 relative z-10">
+<section className="flex drop-shadow-lg bg-white justify-between w-full h-20 relative z-30">
 <div className="flex items-center justify-between  ml-[52px] w-full">
     <div>
         <h2 className="font-skranji text-2xl lg:text-4xl">Hi, welcome to my Portfolio</h2>
